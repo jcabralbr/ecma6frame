@@ -14,7 +14,7 @@ class ProxyFactory {
             },
 
             set(target, prop, value, receiver){
-                if (props.includes(prop)){
+                if (props & props.includes(prop)){
                     acao(target);
                 }
 
